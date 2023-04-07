@@ -11,13 +11,49 @@
     --tec-color:#d8d4d480;
 }
 
+
+@font-face {
+    font-family: alkatra;
+    src: url(/font/Alkatra-VariableFont_wght);
+}
+
+@font-face {
+    font-family: aclonica;
+    src: url(/assets/font/Alkatra-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: caveat;
+    src: url(/font/Caveat-VariableFont_wght.ttf);
+}
+
+
+@font-face {
+    font-family: frede;
+    src: url(/font/FrederickatheGreat-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: paci;
+    src: url(/font/Pacifico-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: play;
+    src: url(/font/Playball-Regular.ttf);
+}
+
+
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    box-sizing: border-box;    
+    font-family: alkatra;
 }
+
+
 
 img{
     width: 100%;
@@ -59,6 +95,8 @@ nav{
     width: 100%;
     padding:10px 0 10px 0 ;
     color: var(--card-color);
+    transition: filter .5s;
+
 }
 
 .presentation_nav{
@@ -77,8 +115,9 @@ nav{
 
 
 .projects_nav:hover{
-    background-color: var(--projects-hover);
+    filter: contrast(90%);
 }
+
 .presentation_nav:hover{
     background-color: var(--presentation-hover);
 }
@@ -203,7 +242,13 @@ nav{
 .projects_card img{
     border-radius: 1rem;
     overflow: hidden;
+    transition: transform .5s;
 }
+
+.projects_card img:hover{
+    transform: scale(1.1);
+}
+
 
 .projects_card .tec_img{
     background-color: var(--tec-color);
@@ -238,6 +283,7 @@ nav{
     padding-left: 1rem;
     text-align: left;
     backdrop-filter: blur(4px);   
+    background-color: #f3f2e63a;
     color: #222121;
 }
 
