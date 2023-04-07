@@ -221,7 +221,7 @@ nav{
 }
 
 .container_cards::-webkit-scrollbar-thumb{
-    background-color: rgb(32, 32, 73);
+    background-color: rgb(173, 173, 173);
     border-radius: 20px;
 
 }
@@ -239,7 +239,9 @@ nav{
     overflow: hidden;
 }
 
+
 .projects_card img{
+    height: 150px;
     border-radius: 1rem;
     overflow: hidden;
     transition: transform .5s;
