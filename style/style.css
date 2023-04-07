@@ -1,0 +1,304 @@
+:root{
+    --primary-color:#534637;
+    --second-color:#bd7c32;
+    --projects-color:#6b122f;
+    --projects-hover:#436b6b;
+    --presentation-color:#dbd9c7;
+    --presentation-hover:#f3f2e6;
+    --contact-color:#dbd9d9;
+    --contact-hover:#a7a7a7;
+    --card-color:#f3f2e6;
+    --tec-color:#d8d4d480;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--presentation-color);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+nav{
+    cursor: pointer;
+
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+    padding:0px 0 0 0 ;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.projects_nav{
+    background-color: var(--projects-color);
+    background-image: url(/assets/images/17.jpg);
+    background-repeat: no-repeat;    
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    padding:10px 0 10px 0 ;
+    color: var(--card-color);
+}
+
+.presentation_nav{
+    background-color: var(--presentation-color);    
+    width: 100%;
+    padding:10px 0 10px 0 ;
+    transition: background-color .5s;
+}
+
+
+.contact_nav{
+    background-color: var(--contact-color);
+    width: 100%;
+    padding:10px 0 10px 0 ;
+}
+
+
+.projects_nav:hover{
+    background-color: var(--projects-hover);
+}
+.presentation_nav:hover{
+    background-color: var(--presentation-hover);
+}
+.contact_nav:hover{
+    background-color: var(--contact-hover);
+}
+
+
+
+.projects_container{
+    background-color: var(--projects-color);
+    background-image: url(/assets/images/17.jpg);
+    background-repeat: no-repeat;    
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    top: 37px;
+    height: 94vh;
+    position: absolute;
+    bottom: 100%;
+    z-index: 100;
+    transition: right 1s;
+}
+
+.projects_view{
+    bottom: 0%;
+}
+
+.presentation_container{
+    background-image: url(/assets/images/11.jpeg);
+    background-repeat: no-repeat;    
+    background-size: cover;
+    background-position: right;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    width: 100%;
+    top: 37px;
+    height: 94vh;
+    position: absolute;
+    right: 0%;
+    z-index: 100;
+    transition: right 1s;
+
+}
+
+
+
+.presentation_view{
+    right: 0%;
+}
+
+.presentation_view_initial{
+    right: 100%;
+}
+
+
+.contact_container{
+    background-color: var(--contact-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    top: 37px;
+    height: 94vh;
+    position: absolute;
+    right: 100%;
+    z-index: 100;
+    transition: right 1s;
+}
+
+.contact_view{
+    right: 0%;
+}
+
+
+.container_cards{
+    margin: auto;
+    width: 90%;
+    height: 94vh;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: .5rem;
+    overflow-y: scroll;
+}
+
+.container_cards::-webkit-scrollbar{
+    width: 5px;
+}
+
+
+.container_cards::-webkit-scrollbar-track{
+    background: #21363686;
+}
+
+.container_cards::-webkit-scrollbar-thumb{
+    background-color: rgb(32, 32, 73);
+    border-radius: 20px;
+
+}
+
+.projects_card{
+    background-color: var(--card-color);
+    padding: 1rem;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .8rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.projects_card img{
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.projects_card .tec_img{
+    background-color: var(--tec-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem;
+    width: 100%;
+    height: 40px;
+}
+
+.projects_card .tec_img img{
+    height: 30px;
+    width: 30px;
+}
+
+.projects_card .view_online b{
+    cursor: pointer;
+    color: var(--projects-color);
+}
+
+.project_description{
+    background-color: #ffffff;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+
+
+.presentation_info{
+    width: 70%;
+    padding-left: 1rem;
+    text-align: left;
+    backdrop-filter: blur(4px);   
+    color: #222121;
+}
+
+
+.presentation_container .span_to_projects{
+    color: var(--projects-color);
+    cursor: pointer;
+}
+
+.linkedin a, .instagram_dev a, .instagram_art a{
+    width: 100%;
+}
+
+
+
+.contact_container .linkedin, .instagram_dev, .instagram_art{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.contact_container .linkedin_logo, .instagram_logo{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    padding: .2rem;
+}
+
+
+.contact_container .linkedin_photo, .instagram_photo{
+    height: 100px;
+    width: 100%;
+}
+
+
+
+@media (min-width: 500px) {
+    .contact_container .linkedin, .instagram_dev, .instagram_art{
+        width: 60%;
+    }
+
+    .presentation_container{
+        background-image: url(/assets/images/10.jpeg);
+        background-size: auto;
+
+    }
+        
+}
+
+@media (min-width: 800px) {
+    .contact_container .linkedin, .instagram_dev, .instagram_art{
+        width: 40%;
+    }
+    .presentation_container{
+        background-image: url(/assets/images/10.jpeg);
+        background-size: cover;
+
+    }
+}
