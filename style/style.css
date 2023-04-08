@@ -1,14 +1,14 @@
 :root{
     --primary-color:#534637;
-    --second-color:#bd7c32;
+    --link-color:#5e0606;
     --projects-color:#302D36;
     --projects-hover:#464350;
     --presentation-color:#dbd9c7;
     --presentation-hover:#f3f2e6;
-    --contact-color:#dbd9d9;
-    --contact-hover:#a7a7a7;
+    --contact-color:#ffffff;
+    --contact-hover:#e9e6e6;
     --card-color:#f3f2e6;
-    --tec-color:#d8d4d480;
+    --tec-color:#f1e7e780;
 }
 
 
@@ -107,6 +107,8 @@ nav{
     background-color: var(--contact-color);
     width: 100%;
     padding:10px 0 10px 0 ;
+    transition: background-color .5s;
+
 }
 
 
@@ -173,6 +175,7 @@ nav{
 
 .contact_container{
     background-color: var(--contact-color);
+    background: linear-gradient(180deg, rgba(255,255,255,1)0%,rgb(70, 70, 88)100%, rgb(8, 97, 97)100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,7 +219,6 @@ nav{
 .container_cards::-webkit-scrollbar-thumb{
     background-color: rgb(173, 173, 173);
     border-radius: 20px;
-
 }
 
 .projects_card{
@@ -284,7 +286,7 @@ nav{
 
 
 .presentation_container .span_to_projects{
-    color: var(--projects-color);
+    color: var(--link-color);
     cursor: pointer;
 }
 
@@ -294,15 +296,47 @@ nav{
 
 
 
-.contact_container .linkedin, .instagram_dev, .instagram_art{
-    width: 80%;
+.contact_container .linkedin{
+    background-image: url(/assets/images/linkedin-banner.jpg);
+    background-position: left;
+    background-size: cover;
     height: 100px;
     display: flex;
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
+    border: 1px solid rgb(216, 215, 215);
     cursor: pointer;
 }
+
+.contact_container  .instagram_dev{
+    background-image: url(/assets/images/dev-banner.jpg);
+    background-position: right;
+    background-size: cover;
+    height: 100px;
+    display: flex;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid rgb(216, 215, 215);
+    cursor: pointer;
+}
+
+.contact_container .instagram_art{
+    background-image: url(/assets/images/music-banner.jpg);
+    background-position: left;
+    background-size: cover;
+    height: 100px;
+    display: flex;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid rgb(216, 215, 215);
+    cursor: pointer;
+}
+
+
+
 
 
 .contact_container .linkedin_logo, .instagram_logo{
