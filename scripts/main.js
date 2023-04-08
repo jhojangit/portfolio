@@ -49,8 +49,4 @@ const handleNav = () =>{
 
 
 
-const main = () =>{
-    handleNav()
-}
-
-main()
+handleNav()

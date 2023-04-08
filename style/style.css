@@ -3,7 +3,7 @@
     --link-color:#5e0606;
     --projects-color:#302d36;
     --projects-hover:#464350;
-    --presentation-color:#dbd9c7;
+    --presentation-color:#DFDBC5;
     --presentation-hover:#f3f2e6;
     --contact-color:#ffffff;
     --contact-hover:#e9e6e6;
@@ -18,34 +18,6 @@
     src: url(/font/Alkatra-VariableFont_wght);
 }
 
-@font-face {
-    font-family: aclonica;
-    src: url(/assets/font/Alkatra-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: caveat;
-    src: url(/font/Caveat-VariableFont_wght.ttf);
-}
-
-
-@font-face {
-    font-family: frede;
-    src: url(/font/FrederickatheGreat-Regular.ttf);
-}
-
-
-@font-face {
-    font-family: paci;
-    src: url(/font/Pacifico-Regular.ttf);
-}
-
-
-@font-face {
-    font-family: play;
-    src: url(/font/Playball-Regular.ttf);
-}
-
 
 *{
     padding: 0;
@@ -53,7 +25,6 @@
     box-sizing: border-box;    
     font-family: alkatra;
 }
-
 
 
 img{
@@ -73,16 +44,13 @@ img{
 
 nav{
     cursor: pointer;
-
     text-align: center;
     font-size: smaller;
     font-weight: 500;
     padding:0px 0 0 0 ;
     width: 100%;
     display: flex;
-
-    z-index: 1000;
-
+    z-index: 3000;
 }
 
 .projects_nav{
@@ -94,7 +62,7 @@ nav{
 }
 
 .presentation_nav{
-    background-color: var(--presentation-color);    
+    background-color: var(--presentation-color);
     width: 100%;
     padding:10px 0 10px 0 ;
     transition: background-color .5s;
@@ -126,7 +94,6 @@ nav{
 
 .projects_container{
     background-color: var(--projects-color);
-
     width: 100%;
     top: 37px;
     height: 94vh;
@@ -146,7 +113,6 @@ nav{
     background-size: cover;
     background-position: right;
     
-    
     display: flex;
     align-items: center;
     justify-content: start;
@@ -158,9 +124,7 @@ nav{
     right: 0%;
     z-index: 100;
     transition: right 1s;
-
 }
-
 
 
 .presentation_view{
@@ -223,7 +187,7 @@ nav{
 
 .projects_card{
     background-color: var(--card-color);
-    padding: 1rem;
+    padding: .8rem;
     max-width: 300px;
     display: flex;
     flex-direction: column;
@@ -243,7 +207,7 @@ nav{
 }
 
 .projects_card img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 
