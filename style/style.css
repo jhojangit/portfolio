@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&display=swap');
+
 :root{
     --primary-color:#534637;
     --link-color:#5e0606;
@@ -13,17 +15,11 @@
 }
 
 
-@font-face {
-    font-family: alkatra;
-    src: url(/font/Alkatra-VariableFont_wght);
-}
-
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;    
-    font-family: alkatra;
+    font-family: 'Alkatra', cursive;
 }
 
 
@@ -283,7 +279,7 @@ nav{
 
 
 .contact_container  .instagram_dev{
-    background-image: url(/assets/images/dev-banner.jpg);
+    background-image: url(/assets/images/github-banner.jpg);
     background-position: right;
     background-size: cover;
     height: 105px;
