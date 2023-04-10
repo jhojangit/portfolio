@@ -3,6 +3,7 @@
 :root{
     --primary-color:#534637;
     --link-color:#5e0606;
+    --button-color:#1379de;
     --projects-color:#302d36;
     --projects-hover:#464350;
     --presentation-color:#DFDBC5;
@@ -12,6 +13,7 @@
     --card-color:#f3f2e6;
     --tec-color:#f1e7e780;
     --contact-font-color:#363535;
+
 }
 
 
@@ -222,10 +224,26 @@ nav{
     width: 30px;
 }
 
-.projects_card .view_online b{
-    cursor: pointer;
-    color: var(--projects-color);
+.view_online{
+    display: flex;
+    justify-content: center;
 }
+
+.projects_card .view_online a{
+text-decoration: none;
+cursor: pointer; 
+color: var(--card-color);
+background-color: var(--button-color);
+border-radius: 1rem;
+padding:.4rem;
+transition: background-color .5s;
+}
+
+.projects_card .view_online a:hover{
+    background-color: #173361;
+}
+
+
 
 .project_description{
     background-color: #ffffff;
