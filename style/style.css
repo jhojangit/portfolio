@@ -347,13 +347,33 @@ transition: background-color .5s;
 }
 
 
+.contact__email{
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    padding-top: 1rem;
+}
+
 .contact_email{
     text-decoration: underline; 
     background-color: var(--contact-color);
     padding: .7rem;
     border-radius: .5rem;
+    display: flex;
 }
 
+.content__email{
+    background-color: #e2e3e6;
+    padding: .7rem  3rem;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    transition: background-color .4s;
+}
+
+
+.content__email:hover{
+    background-color: #ffffff;
+}
 
 
 /* LOAD STYLE */
