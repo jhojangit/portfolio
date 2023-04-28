@@ -161,11 +161,12 @@ nav{
     margin: auto;
     width: 90%;
     height: 94vh;
-    gap: 1rem;
+    gap: 2.5rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: .5rem;
+    padding-top: 3rem;
     overflow-y: scroll;
 }
 
@@ -183,6 +184,7 @@ nav{
     border-radius: 20px;
 }
 
+
 .projects_card{
     background-color: var(--card-color);
     padding: .8rem;
@@ -194,7 +196,17 @@ nav{
     border: 1px solid white;
     border-radius: 1rem;
     overflow: hidden;
+    transition: all .5s;
 }
+
+.projects_card:hover{
+    -webkit-box-shadow: 0px 0px 27px -5px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 27px -5px rgba(255,255,255,1);
+box-shadow: 0px 0px 27px -5px rgba(255,255,255,1);
+
+}
+
+
 
 
 .projects_card img{
@@ -348,27 +360,31 @@ transition: background-color .5s;
 
 
 .contact__email{
-    text-align: center;
-    border: 1px solid grey;
+    border: 3px solid grey;
     border-radius: 1rem;
-    padding-top: 1rem;
-}
-
-.contact_email{
-    text-decoration: underline; 
-    background-color: var(--contact-color);
-    padding: .7rem;
-    border-radius: .5rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: background-color .3s;
+    text-align: center;
     display: flex;
 }
 
-.content__email{
-    background-color: #e2e3e6;
-    padding: .7rem  3rem;
-    border: 1px solid grey;
-    border-radius: 1rem;
-    transition: background-color .4s;
+.contact__email:hover {
+    background-color: var(--presentation-color);
+} 
+
+.contact__button{    
+    padding: 1rem;
+    color: black;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: larger;
 }
+
+
+
+
+
 
 
 .content__email:hover{
