@@ -113,7 +113,7 @@ nav{
     background-position: right;
     
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: start;
 
     width: 100%;
@@ -123,6 +123,8 @@ nav{
     right: 0%;
     z-index: 100;
     transition: right 1s;
+
+    
 }
 
 
@@ -271,34 +273,55 @@ transition: background-color .5s;
 
 
 .presentation_info{
-    width: 70%;
+    width: 80%;
     padding: 1rem;
     text-align: left;
-    backdrop-filter: blur(4px);   
-    background-color: #f7f6f23a;
     color: var(--presentation-letter-color);
     border-radius: .5rem;
-    font-size: 1.2rem;
+}
+
+.presentation_info-h1{
+    font-size: 3rem;
+    width: 100%;
+	color: transparent;
+	text-align: center;
+	text-transform: uppercase;
+	
+	font-weight: bold;
+
+	background-image: url('../assets/images/2.jpg');
+	background-size: cover;
+	background-position-y: 700px;
+	
+	background-clip: text;
+	-webkit-background-clip: text;
+
+	-webkit-text-fill-color: transparent;
+    line-height: 3rem;
 }
 
 
-.span_black{
-    font-weight: bold;
-}
 
 .presentation_container .span_to_projects{
     color: var(--link-color);
     cursor: pointer;
     font-weight: bold;
-    font-size: 1.1rem;
-
+    font-size: 1.3rem;
 }
+
+
 
 .presentation_info-p{
     padding-top: .5rem;
-    font-size: 1.1rem;
+    line-height: 2rem;
+    animation: textSize 1s forwards;
 }
 
+@keyframes textSize {
+    from{font-size: 10rem;}
+
+    to{font-size: 1.5rem;}
+}
 
 
 
@@ -382,7 +405,7 @@ transition: background-color .5s;
 
 
 .contact__email{
-    border: 3px solid grey;
+
     border-radius: 1rem;
     margin: 1rem;
     cursor: pointer;
@@ -520,7 +543,46 @@ transition: background-color .5s;
         margin-left: 6rem;
         width: 50%;
         padding-left: 1rem;
-        text-align: left;
+        text-align: center;
+    }
+
+    .presentation_info-h1{
+        font-size: 5rem;
+        width: 100%;
+        color: transparent;
+        text-align: center;
+        text-transform: uppercase;
+        
+        font-weight: bold;
+    
+        background-image: url('../assets/images/2.jpg');
+        background-size: cover;
+        background-position-y: 700px;
+        
+        background-clip: text;
+        -webkit-background-clip: text;
+    
+        -webkit-text-fill-color: transparent;
+        line-height: 5rem;
+
+    }
+
+
+    .presentation_container{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+
+    .presentation_info-p{
+        animation: textSize 1s forwards;
+    }
+
+    @keyframes textSize {
+        from{font-size: 10rem;}
+
+        to{font-size: 2rem;}
     }
 }
 
