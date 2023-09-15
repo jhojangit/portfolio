@@ -18,6 +18,8 @@
 
 
 
+
+
 *{
     padding: 0;
     margin: 0;
@@ -49,7 +51,84 @@ nav{
     padding:0px 0 0 0 ;
     width: 100%;
     display: flex;
-    z-index: 3000;
+}
+
+
+
+#slideshow {
+	margin: 0 auto;
+	width: 100%;
+    height: 100px;
+	box-sizing: border-box;
+}
+
+
+.entire-content {
+	margin: auto;
+	width: 80px;
+	perspective: 1000px;
+	position: relative;
+	padding-top: 0px;
+    margin-top: -60px;
+}
+
+.content-carrousel {
+	width: 100%;
+	position: absolute;
+	float: right;
+	animation: rotar 30s infinite linear;
+	transform-style: preserve-3d;
+}
+
+
+.content-carrousel figure {
+	width: 50%;
+	height: 50px;
+	overflow: hidden;
+	position: absolute;
+}
+
+.content-carrousel figure:nth-child(1) {
+	transform: rotateY(0deg) translateZ(80px); 
+} .content-carrousel figure:nth-child(2) {
+	transform: rotateY(40deg) translateZ(80px); 
+} .content-carrousel figure:nth-child(3) {
+	transform: rotateY(80deg) translateZ(80px); 
+} .content-carrousel figure:nth-child(4) {
+	transform: rotateY(120deg) translateZ(80px); 
+} .content-carrousel figure:nth-child(5) {
+	transform: rotateY(160deg) translateZ(80px); 
+} .content-carrousel figure:nth-child(6) {
+	transform: rotateY(200deg) translateZ(80px); 
+} .content-carrousel figure:nth-child(7) {
+	transform: rotateY(240deg) translateZ(80px); 
+} .content-carrousel figure:nth-child(8) {
+	transform: rotateY(280deg) translateZ(80px); 
+} .content-carrousel figure:nth-child(9) {
+	transform: rotateY(320deg) translateZ(80px); 
+} .content-carrousel figure:nth-child(10) {
+	transform: rotateY(360deg) translateZ(80px); 
+} 
+
+.shadow {
+    position: absolute;
+    filter: sepia(90%);
+}
+
+.content-carrousel img {
+	image-rendering: auto;
+	transition: all 300ms;
+	width: 100%;
+	height: 100%;
+}
+
+
+@keyframes rotar {
+	from {
+		transform: rotateY(0deg);
+	} to {
+		transform: rotateY(360deg);
+	}
 }
 
 .projects_nav{
@@ -370,6 +449,8 @@ transition: background-color .5s;
     
     transform: rotateX(8deg) rotateY(10deg);
     transform-style: preserve-3d;
+
+    
 }
 
 
@@ -546,6 +627,12 @@ transition: background-color .5s;
     -webkit-animation: bounce 1.5s infinite alternate;
 }
 
+
+
+
+
+
+
 @keyframes bounce{
     from{
         trasform: translateY(0px)
@@ -631,6 +718,93 @@ transition: background-color .5s;
         visibility: visible;
     }
     
+
+
+
+
+
+
+
+
+
+
+
+    #slideshow {
+        margin: 0 auto;
+        padding-top: 10px;
+        height: 600px;
+        width: 100%;
+        max-width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+    }
+    
+    
+    .entire-content {
+        margin: auto;
+        width: 80px;
+        perspective: 1000px;
+        position: relative;
+        padding-top: 80px;
+    }
+    
+    .content-carrousel {
+        width: 100%;
+        position: absolute;
+        float: right;
+        animation: rotar 40s infinite linear;
+        transform-style: preserve-3d;
+    }
+    
+    
+    .content-carrousel figure {
+        width: 60%;
+        height: 60px;
+        overflow: hidden;
+        position: absolute;
+    }
+    
+    .content-carrousel figure:nth-child(1) {
+        transform: rotateY(0deg) translateZ(130px); 
+    } .content-carrousel figure:nth-child(2) {
+        transform: rotateY(40deg) translateZ(130px); 
+    } .content-carrousel figure:nth-child(3) {
+        transform: rotateY(80deg) translateZ(130px); 
+    } .content-carrousel figure:nth-child(4) {
+        transform: rotateY(120deg) translateZ(130px); 
+    } .content-carrousel figure:nth-child(5) {
+        transform: rotateY(160deg) translateZ(130px); 
+    } .content-carrousel figure:nth-child(6) {
+        transform: rotateY(200deg) translateZ(130px); 
+    } .content-carrousel figure:nth-child(7) {
+        transform: rotateY(240deg) translateZ(130px); 
+    } .content-carrousel figure:nth-child(8) {
+        transform: rotateY(280deg) translateZ(130px); 
+    } .content-carrousel figure:nth-child(9) {
+        transform: rotateY(320deg) translateZ(130px); 
+    } .content-carrousel figure:nth-child(10) {
+        transform: rotateY(360deg) translateZ(130px); 
+    } 
+    
+    .shadow {
+        position: absolute;
+    }
+    
+    .content-carrousel img {
+        image-rendering: auto;
+        transition: all 300ms;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    @keyframes rotar {
+        from {
+            transform: rotateY(0deg);
+        } to {
+            transform: rotateY(360deg);
+        }
+    }
 }
 
 
