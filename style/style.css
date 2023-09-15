@@ -301,6 +301,7 @@ transition: background-color .5s;
 
 	-webkit-text-fill-color: transparent;
     line-height: 3rem;
+
 }
 
 .text-focus-in {
@@ -346,6 +347,7 @@ transition: background-color .5s;
 
 
 .presentation_info-p{
+    
     margin-top: -.5rem;
     font-size: 1.5rem;
     width: 100%;
@@ -364,6 +366,10 @@ transition: background-color .5s;
 
     -webkit-text-fill-color: transparent;
     line-height: 2rem;
+
+    
+    transform: rotateX(8deg) rotateY(10deg);
+    transform-style: preserve-3d;
 }
 
 

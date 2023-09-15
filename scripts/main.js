@@ -24,9 +24,10 @@ const handleNav = () =>{
     })  
 
     spanHTML.addEventListener('click', () =>{
-        projectsHTML.classList.add('projects_view')
-        contactHTML.classList.remove('contact_view')
-        presentationHTML.classList.add('presentation_view_initial')
+        contactHTML.classList.add('contact_view')
+        projectsHTML.classList.remove('projects_view')
+        presentationHTML.classList.remove('presentation_view')
+        presentationHTML.classList.remove('presentation_view_initial')
     }) 
 
 
