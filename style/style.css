@@ -41,7 +41,6 @@ img{
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: red;
 }
 
 
@@ -194,7 +193,7 @@ nav{
     background-image: url(/assets/images/11.jpeg);
     background-repeat: no-repeat;    
     background-size: cover;
-    background-position: right;
+    background-position: left;
     
     display: flex;
     align-items: start;
