@@ -41,6 +41,7 @@ img{
     display: flex;
     flex-direction: column;
     position: relative;
+    background-color: red;
 }
 
 
@@ -193,16 +194,15 @@ nav{
     background-image: url(/assets/images/11.jpeg);
     background-repeat: no-repeat;    
     background-size: cover;
-    background-position: center;
+    background-position: right;
     
     display: flex;
     align-items: start;
-    justify-content: flex-start;
+    justify-content: start;
 
     width: 100%;
     top: 37px;
-    height: calc(100vh - var(--menu-heigth));
-
+    height: calc(100% - var(--menu-heigth));
     position: absolute;
     right: 0%;
     z-index: 100;
@@ -669,7 +669,7 @@ transition: background-color .5s;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
     .contact_container .linkedin, .instagram_dev, .instagram_art{
         width: 40%;
     }
@@ -677,15 +677,6 @@ transition: background-color .5s;
     .contact_container{
         justify-content: center;
 
-    }
-
-    .container{
-        width: 100%;
-        height: 100vh;
-        background-color: var(--presentation-color);
-        display: flex;
-        flex-direction: column;
-        position: relative;
     }
     
     .presentation_container{
@@ -697,56 +688,6 @@ transition: background-color .5s;
         justify-content: start;
         height: calc(100% - var(--menu-heigth));
 
-    }
-
-    .projects_container{
-        background-color: var(--projects-color);
-        width: 100%;
-        top: 37px;
-        height: calc(100% - var(--menu-heigth));
-        position: absolute;
-        bottom: 100%;
-        z-index: 100;
-        transition: right 1s;
-    }
-
-
-    .presentation_container{
-        background-image: url(/assets/images/10.jpeg);
-        background-size: cover;
-        padding-left: 1rem;
-        display: flex;
-        height: calc(100% - var(--menu-heigth));
-        
-        align-items: start;
-        justify-content: flex-start;
-    
-        width: 100%;
-        top: 37px;
-    
-        position: absolute;
-        right: 0%;
-        z-index: 100;
-        transition: right 1s;
-    }
-
-
-    .contact_container{
-        background-color: var(--contact-color);
-        background: linear-gradient(180deg, rgba(255,255,255)30%,rgb(148, 147, 138)100%);
-        color: var(--contact-font-color);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 1rem;
-        width: 100%;
-        top: 37px;
-        height: calc(100% - var(--menu-heigth));
-        position: absolute;
-        right: 100%;
-        z-index: 100;
-        transition: right 1s;
     }
 
     .presentation_info{
