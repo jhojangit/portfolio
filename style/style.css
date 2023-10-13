@@ -36,7 +36,8 @@ img{
 
 .container{
     width: 100%;
-    height: calc(100vh - var(--menu-heigth)*2.7);
+    height: 100vh;
+    min-height: 600px;
     background-color: var(--presentation-color);
     display: flex;
     flex-direction: column;
@@ -676,6 +677,15 @@ transition: background-color .5s;
     .contact_container{
         justify-content: center;
 
+    }
+
+    .container{
+        width: 100%;
+        height: calc(100vh);
+        background-color: var(--presentation-color);
+        display: flex;
+        flex-direction: column;
+        position: relative;
     }
     
     .presentation_container{
