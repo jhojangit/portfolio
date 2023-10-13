@@ -14,6 +14,7 @@
     --card-color:#f3f2e6;
     --tec-color:#f1e7e780;
     --contact-font-color:#363535;
+    --menu-heigth: 40px;
 }
 
 
@@ -134,6 +135,7 @@ nav{
 .projects_nav{
     background-color: var(--projects-color);
     width: 100%;
+    height: var(--menu-heigth);
     padding:10px 0 10px 0 ;
     color: var(--card-color);
     transition: background-color .5s;
@@ -142,6 +144,7 @@ nav{
 .presentation_nav{
     background-color: var(--presentation-color);
     width: 100%;
+    height: var(--menu-heigth);
     padding:10px 0 10px 0 ;
     transition: background-color .5s;
 }
@@ -150,6 +153,7 @@ nav{
 .contact_nav{
     background-color: var(--contact-color);
     width: 100%;
+    height: var(--menu-heigth);
     padding:10px 0 10px 0 ;
     transition: background-color .5s;
     color: var(--contact-font-color);
@@ -174,7 +178,7 @@ nav{
     background-color: var(--projects-color);
     width: 100%;
     top: 37px;
-    height: 95vh;
+    height: calc(100% - var(--menu-heigth));
     position: absolute;
     bottom: 100%;
     z-index: 100;
@@ -189,21 +193,20 @@ nav{
     background-image: url(/assets/images/11.jpeg);
     background-repeat: no-repeat;    
     background-size: cover;
-    background-position: right;
+    background-position: center;
     
     display: flex;
     align-items: start;
-    justify-content: start;
+    justify-content: flex-start;
 
     width: 100%;
     top: 37px;
-    height: 95vh;
+    height: calc(100vh - var(--menu-heigth));
+
     position: absolute;
     right: 0%;
     z-index: 100;
     transition: right 1s;
-
-    
 }
 
 
@@ -222,12 +225,12 @@ nav{
     color: var(--contact-font-color);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     width: 100%;
     top: 37px;
-    height: 95vh;
+    height: calc(100% - var(--menu-heigth));
     position: absolute;
     right: 100%;
     z-index: 100;
@@ -242,7 +245,7 @@ nav{
 .container_cards{
     margin: auto;
     width: 90%;
-    height: 94vh;
+    height: 100%;
     gap: 2.5rem;
     display: flex;
     justify-content: center;
@@ -670,10 +673,80 @@ transition: background-color .5s;
     .contact_container .linkedin, .instagram_dev, .instagram_art{
         width: 40%;
     }
+
+    .contact_container{
+        justify-content: center;
+
+    }
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        background-color: var(--presentation-color);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
     .presentation_container{
         background-image: url(/assets/images/10.jpeg);
         background-size: cover;
         padding-left: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: calc(100% - var(--menu-heigth));
+
+    }
+
+    .projects_container{
+        background-color: var(--projects-color);
+        width: 100%;
+        top: 37px;
+        height: calc(100% - var(--menu-heigth));
+        position: absolute;
+        bottom: 100%;
+        z-index: 100;
+        transition: right 1s;
+    }
+
+
+    .presentation_container{
+        background-image: url(/assets/images/10.jpeg);
+        background-size: cover;
+        padding-left: 1rem;
+        display: flex;
+        height: calc(100% - var(--menu-heigth));
+        
+        align-items: start;
+        justify-content: flex-start;
+    
+        width: 100%;
+        top: 37px;
+    
+        position: absolute;
+        right: 0%;
+        z-index: 100;
+        transition: right 1s;
+    }
+
+
+    .contact_container{
+        background-color: var(--contact-color);
+        background: linear-gradient(180deg, rgba(255,255,255)30%,rgb(148, 147, 138)100%);
+        color: var(--contact-font-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        top: 37px;
+        height: calc(100% - var(--menu-heigth));
+        position: absolute;
+        right: 100%;
+        z-index: 100;
+        transition: right 1s;
     }
 
     .presentation_info{
@@ -681,6 +754,7 @@ transition: background-color .5s;
         width: 50%;
         padding-left: 1rem;
         text-align: center;
+        
     }
 
     .presentation_info-h1{
@@ -703,12 +777,6 @@ transition: background-color .5s;
         line-height: 5rem;
     }
 
-
-    .presentation_container{
-        display: flex;
-        align-items: center;
-        justify-content: start;
-    }
 
     .presentation_container .span_to_projects{
         color: var(--link-color);
