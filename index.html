@@ -237,28 +237,6 @@
 
 
 
-                    <div class="projects_card">
-                        <h3 style="text-align: center;">E-commerce</h3>
-                        <div class="project_img_container">
-                            <a href="https://ecomjhojan.netlify.app/" target="blank">
-                                <img loading="lazy" src="assets/images/e-commerce.png" alt=""></a>
-                        </div>
-                        <div class="tec_img">
-                            <img loading="lazy" src="assets/images/html-5.png" alt="HTML LOGO IMAGE">
-                            <img loading="lazy" src="assets/images/css-3.png" alt="CSS LOGO IMAGE">
-                            <img loading="lazy" src="assets/images/js.png" alt=" JAVASCRIPT LOGO IMAGE">
-                            <img loading="lazy" src="assets/images/local-storage.png" alt=" LOCAL STORAGE LOGO IMAGE">
-                            <img loading="lazy" src="assets/images/api.png" alt=" API LOGO IMAGE">
-                        </div>
-                        <p class="project_description">Utiliza un API para obtener los productos a mostrar. Agrega y
-                            elimina productos del carrito de compras. Verifica la existencia de productos y guarda el
-                            estado de los productos en el Local Storage. (Cuenta con modo nocturno)</p>
-                        <p class="view_online"><a href="https://ecomjhojan.netlify.app/" target="blank"><b>↗ Ver
-                                    online</b></a> </p>
-                    </div>
-
-
-
                 </div>
             </section>
 
@@ -311,10 +289,21 @@
             <section class="contact_container">
 
                 <h2>Contáctame</h2>
-                <div class="contact__email">
-                    <a class="contact__button" href="mailto:jhojanblackout@gmail.com"> ¿Quieres que trabajemos juntos o
-                        tienes una pregunta?</a>
-                </div>
+
+                <form class="contact__form" netlify>
+                    <section class="contact__form--inputs">
+                        <label for="email">Email
+                            <input type="email" name="email" id="email" required>
+                        </label>
+                        
+                        <label for="nameForm"> Nombre / Empresa
+                            <input type="text" id="nameForm" required>
+                        </label>
+                    </section>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje" required></textarea>
+
+                    <input type="submit" value="Enviar" id="contact__form--submit">
+                </form>
 
                 <div class="linkedin">
                     <a href="https://www.linkedin.com/in/jhojaneducation/" target="_blank" rel="noopener noreferrer">
