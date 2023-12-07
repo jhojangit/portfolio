@@ -45,6 +45,7 @@ img{
 }
 
 
+
 nav{
     cursor: pointer;
     text-align: center;
@@ -330,7 +331,7 @@ box-shadow: 0px 0px 27px -5px rgba(255,255,255,1);
 text-decoration: none;
 cursor: pointer; 
 color: var(--card-color);
-background-color: var(--button-color);
+background-color: #504c4c;
 border-radius: 1rem;
 padding:.4rem;
 transition: background-color .5s;
@@ -862,9 +863,6 @@ textarea{
     }
 
 
-
-
-
     .contact__form{
         display: flex;
         flex-direction: column;
@@ -880,51 +878,8 @@ textarea{
         
         gap: .5rem;
     }
-    
-    label{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    input{
-        border: 1px solid #ada9b4;
-        border-radius: .5rem;
-        text-indent: 0.5rem;
-        margin-top: -.3rem;
-        background-color: var(--card-color);
-        color: var(--contact-font-color);
-        font-size: 1rem;
-        outline-color: rgb(204, 168, 154);
-        width: 230px;
-        max-width: 300px;
-    }
-    
-    
-    textarea{
-        margin-top: 1rem;
-        border-radius: .5rem;
-        padding-left: 1rem;
-        border: 1px solid #ada9b4;
-        resize: vertical;
-        max-width: 100%;
-        height: 4rem;
-        min-height: 50px;
-        max-height: 400px;
-        /* form-sizing:content; */
-        outline: none ;
-        font-size: 1rem;
-    }
-    
-    #contact__form--submit{
-        margin-top: .5rem;
-        cursor: pointer;
-        transition: background-color 500ms;
-    }
-    
-    
-    #contact__form--submit:hover{
-        background-color: #e2cba9;
-    }
+
+
 }
 
 
